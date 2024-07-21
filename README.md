@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 3. Obtain an API key from Hugging face hub and add it to the `.env` file in the project directory.
   ```
-  HUGGINGFACEHUB_API_TOKEN="api key not in quotes"
+  HUGGINGFACEHUB_API_TOKEN="api secret key"
   ```
 
 4.Run the main python file using the Streamlit CLI. Execute the following command:
@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 5. Ask questions in natural language about the loaded PDFs using the chat interface.
 
-###Tweaking AI models
+### Tweaking AI models
 
 1.The default embedding model is "hkunlp/instructor-xl" which runs locally,
 if you want to change it change the model
@@ -40,7 +40,7 @@ if you want to change it ,replace the model_id-like "google/gemma-2-9b-it"
 
 4.If you want to use OpenAI embedding model or GPT-models change the default model to openAI models and add 
 ```
-OPENAI_API_KEY="your_secrit_api_key"
+OPENAI_API_KEY="your_secret_api_key"
  ```
 
 ### How It Works
