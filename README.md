@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 5. Ask questions in natural language about the loaded PDFs using the chat interface.
 
-### Tweaking AI models
+## Tweaking AI models
 
 1.The default embedding model is "hkunlp/instructor-xl" which runs locally,
 if you want to change it change the model
@@ -43,7 +43,7 @@ if you want to change it ,replace the model_id-like "google/gemma-2-9b-it"
 OPENAI_API_KEY="your_secret_api_key"
  ```
 
-### How It Works
+## How It Works
 
 
 1.  The app can read from  multiple PDF documents and extracts their text content.
