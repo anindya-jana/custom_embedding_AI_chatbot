@@ -10,9 +10,9 @@ To install the App, please follow these steps:
 1. Clone the repository to your local machine.
 
 2. Install the required dependencies by running the following command:
-   ```
-   pip install -r requirements.txt
-   ```
+```
+pip install -r requirements.txt
+```
 
 3. Obtain an API key from Hugging face hub and add it to the `.env` file in the project directory.
   ```
@@ -28,7 +28,7 @@ To install the App, please follow these steps:
 
 5. Ask questions in natural language about the loaded PDFs using the chat interface.
 
-##Tweaking AI models
+###Tweaking AI models
 
 1.The default embedding model is "hkunlp/instructor-xl" which runs locally,
 if you want to change it change the model
@@ -43,7 +43,7 @@ if you want to change it ,replace the model_id-like "google/gemma-2-9b-it"
 OPENAI_API_KEY="your_secrit_api_key"
  ```
 
-## How It Works
+### How It Works
 
 
 1.  The app can read from  multiple PDF documents and extracts their text content.
@@ -56,4 +56,4 @@ OPENAI_API_KEY="your_secrit_api_key"
 
 5. The selected chunks are passed to the language model, which generates a response based on the relevant content of the PDFs.
 
-7. 
+   
