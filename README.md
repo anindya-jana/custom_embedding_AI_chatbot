@@ -1,5 +1,8 @@
 # custom_embedding_AI_chatbot
 
+
+[Click here to watch the demo video](videos/custom_chatbot_running.mp4)
+
 ## Introduction
 The custom_embedding_AI_chatbot App is a Python application designed for interacting with multiple PDF documents. By using natural language, you can ask questions about the content of the PDFs, and the app will provide relevant responses based on the documents' information. This application leverages a language model to deliver accurate answers to your queries. Please note that the app only responds to questions related to the loaded PDFs.
 
@@ -38,7 +41,7 @@ if you want to change it ,replace the model_id-like "google/gemma-2-9b-it"
 
 3. To set your custom instructions append more text in the instruction global variable
 
-4. If you want to use OpenAI embedding model or GPT-models change the default model to openAI models and add 
+4. If you want to use OpenAI embedding model or GPT-models change the default model names to openAI models and add  it to the `.env` file in the project directory.
 ```
 OPENAI_API_KEY="your_secret_api_key"
  ```
