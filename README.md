@@ -3,6 +3,9 @@
 
 [Click here to watch the demo video](custom_chatbot_running.mp4)
 
+https://github.com/user-attachments/assets/caf8ab5a-f84f-49e9-8f76-229a6d38403e
+
+
 ## Introduction
 The custom_embedding_AI_chatbot App is a Python application designed for interacting with multiple PDF documents. By using natural language, you can ask questions about the content of the PDFs, and the app will provide relevant responses based on the documents' information. This application leverages a language model to deliver accurate answers to your queries. Please note that the app only responds to questions related to the loaded PDFs.
 
