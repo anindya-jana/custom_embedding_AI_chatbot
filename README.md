@@ -26,13 +26,14 @@ pip install -r requirements.txt
   ```
 
 4. Run the main python file using the Streamlit CLI. Execute the following command:
+   ```
    streamlit run custom_chatbot.py
-   
+   ```
 5. The application will launch in your default web browser, displaying the user interface.
 
 6. Load PDF documents into the app by following the provided instructions.
 
-5. Ask questions in natural language about the loaded PDFs using the chat interface.
+7. Ask questions in natural language about the loaded PDFs using the chat interface.
 
 ## Tweaking AI models
 
