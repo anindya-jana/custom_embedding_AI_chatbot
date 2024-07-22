@@ -38,13 +38,11 @@ HUGGINGFACEHUB_API_TOKEN="api secret key"
 ## Tweaking AI models
 
 1. The default embedding model is `hkunlp/instructor-xl` which runs locally,
-if you want to change it change the model
+if you want to change it ,change the model id only to `hkunlp/instructor-base`
 
 2.The dafault vector store used here is FAISS,however you can change it to Chroma or Pinecone like
 ```
-    vector_store = Chroma.from_documents(chunks, embeddings,
-                                         persist_directory="/dir",
-                                         collection_metadata = {"purpose": "To store documents"})
+vector_store = Chroma.from_documents(chunks, embeddings,persist_directory="/dir",collection_metadata = {"purpose": "To store documents"})
 ```
 3. The default text llm model is `meta-llama/Meta-Llama-3-8B-Instruct`,
 if you want to change it ,replace the model_id-like `google/gemma-2-9b-it`
@@ -54,8 +52,8 @@ if you want to change it ,replace the model_id-like `google/gemma-2-9b-it`
 5. If you want to use OpenAI embedding model or GPT-models change the default model names to openAI models and add  it to the `.env` file in the project directory.
 ```
 OPENAI_API_KEY="your_secret_api_key"
- ```
-
+```
+   
 ## How It Works
 
 
@@ -68,5 +66,3 @@ OPENAI_API_KEY="your_secret_api_key"
 4. When you ask a question, the app compares it with the text chunks and identifies the most semantically similar ones.
 
 5. The selected chunks are passed to the language model, which generates a response based on the relevant content of the PDFs.
-
-   
