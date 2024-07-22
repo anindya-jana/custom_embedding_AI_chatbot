@@ -21,14 +21,14 @@ pip install -r requirements.txt
 ```
 
 3. Obtain an API key from Hugging face hub and add it to the `.env` file in the project directory.
-  ```
-  HUGGINGFACEHUB_API_TOKEN="api secret key"
-  ```
+```
+HUGGINGFACEHUB_API_TOKEN="api secret key"
+```
 
 4. Run the main python file using the Streamlit CLI. Execute the following command:
-   ```
-   streamlit run custom_chatbot.py
-   ```
+ ```
+ streamlit run custom_chatbot.py
+ ```
 5. The application will launch in your default web browser, displaying the user interface.
 
 6. Load PDF documents into the app by following the provided instructions.
@@ -37,15 +37,21 @@ pip install -r requirements.txt
 
 ## Tweaking AI models
 
-1. The default embedding model is "hkunlp/instructor-xl" which runs locally,
+1. The default embedding model is `hkunlp/instructor-xl` which runs locally,
 if you want to change it change the model
 
-2. The default text llm model is "meta-llama/Meta-Llama-3-8B-Instruct",
-if you want to change it ,replace the model_id-like "google/gemma-2-9b-it"
+2.The dafault vector store used here is FAISS,however you can change it to Chroma or Pinecone like
+```
+    vector_store = Chroma.from_documents(chunks, embeddings,
+                                         persist_directory="/dir",
+                                         collection_metadata = {"purpose": "To store documents"})
+```
+3. The default text llm model is `meta-llama/Meta-Llama-3-8B-Instruct`,
+if you want to change it ,replace the model_id-like `google/gemma-2-9b-it`
 
-3. To set your custom instructions append more text in the instruction global variable
+4. To set your custom instructions append more text in the instruction global variable
 
-4. If you want to use OpenAI embedding model or GPT-models change the default model names to openAI models and add  it to the `.env` file in the project directory.
+5. If you want to use OpenAI embedding model or GPT-models change the default model names to openAI models and add  it to the `.env` file in the project directory.
 ```
 OPENAI_API_KEY="your_secret_api_key"
  ```
